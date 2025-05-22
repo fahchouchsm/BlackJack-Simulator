@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import cards.Card;
 
 public class Hand {
-    ArrayList<Card> cards = new ArrayList<>();
+    ArrayList<Card> cards;
 
     public Hand() {
         cards = new ArrayList<>();
@@ -14,6 +14,10 @@ public class Hand {
     public int addCard(Card card) {
         cards.add(card);
         return getValue();
+    }
+
+    public ArrayList<Card> getCards() {
+        return cards;
     }
 
     public int getValue() {
