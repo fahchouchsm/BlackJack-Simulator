@@ -1,4 +1,4 @@
-package palayers;
+package game;
 
 public class Handler {
 

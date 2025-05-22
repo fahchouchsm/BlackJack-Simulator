@@ -34,11 +34,11 @@ public class Shoe {
             throw new IllegalArgumentException("Limit out of bounds");
         }
 
-        StringBuilder sb = new StringBuilder();
+        String result = "";
         for (int i = 0; i < limit; i++) {
-            sb.append(cards.get(i).toString());
+            result += cards.get(i).toString();
         }
-        return sb.toString();
+        return result;
     }
 
     public Card draw() {
