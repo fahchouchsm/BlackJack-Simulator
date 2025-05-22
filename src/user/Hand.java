@@ -67,4 +67,12 @@ public class Hand {
 
         return aceCount > 0;
     }
+
+    public String toString() {
+        String c = "";
+        for (Card card : cards) {
+            c += card.toString();
+        }
+        return c;
+    }
 }

@@ -6,4 +6,11 @@ public class Player extends User {
     public float getBalance() {
         return balance;
     }
+
+    public Player(float balance) {
+        if (balance < 0) {
+            throw new IllegalArgumentException("- the balance connot be negative");
+        }
+        this.balance = balance;
+    }
 }
